@@ -1,0 +1,68 @@
+<header>
+    <h1 class="display-5 text-center"><i class="fas fa-meteor"></i> <i class="fa fa-plus"></i> <i
+            class="fab fa-angular"></i> <i class="fa fa-equals"></i> Todo basic app </h1>
+</header>
+
+<div class="container">
+
+    <div class="text-center">
+        <form ng-submit="$ctrl.submit_task($ctrl.newTask)">
+            <div class="form-group">
+                <input type="text" ng-model="$ctrl.newTask" class="form-control" id="new_task_name"
+                       placeholder="Another task ...">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-success">
+                    <i class="fa fa-plus"></i> Ajouter
+                </button>
+            </div>
+            <div class="row text-center m-5" ng-if="$ctrl.error === true">
+                <div class="col-md-12">
+                    <span class="alert alert-danger">{{$ctrl.error_message}}</span>
+                </div>
+            </div>
+
+            <div class="row text-center m-5" ng-if="$ctrl.error === false">
+                <div class="col-md-12">
+                    <span class="alert alert-success">{{$ctrl.success_message}}</span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <ul ng-show="$ctrl.tasks && $ctrl.tasks.length > 0" class="m-5">
+        <div class="row">
+            <div class="card col-md-3 m-3" style="width: 20rem;" ng-repeat="task in $ctrl.tasks">
+                <img class="card-img-top" src="http://lorempixel.com/400/200/sports/Dummy-Text/" alt="Card image cap">
+                <div class="m-3">
+                    <i class="fa fa-clock"></i>
+                    <p ng-bind="task.createdAt | date:'MM/dd/yyyy - hh:m'"></p>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{task.text}} <span><button class="btn btn-sm btn-primary rounded"
+                                                                       ng-click="$ctrl.edit_task(task._id)"><i
+                            class="fa fa-edit"></i></button></span></h5>
+
+                    <div ng-show="task._id == $ctrl.task_to_change" class="form-group">
+                        <input type="text" placeholder="New title ..." ng-model="$ctrl.taskNewTitle" class="form-control">
+                        <button class="btn btn-sm btn-warning m-1" ng-click="$ctrl.edit_apply(task._id, $ctrl.taskNewTitle)">apply</button>
+                    </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="row">
+                        <button class="btn btn-danger btn-md m-2" ng-click="$ctrl.delete_task(task._id)"><i
+                                class="fa fa-trash"></i>
+                            Supp.
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ul>
+
+    <div ng-show="!$ctrl.tasks || $ctrl.tasks.length === 0" class="m-5">
+        <p class="text-center alert alert-warning">Nothing for the moment.</p>
+    </div>
+
+
+</div>
