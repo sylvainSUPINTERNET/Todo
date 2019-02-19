@@ -10,6 +10,8 @@ class TodosListCtrl {
         //called at init
         $scope.viewModel(this);
 
+        this.subscribe('tasks');
+
         this.helpers({
             tasks() {
                 return Tasks.find({}, {
@@ -85,6 +87,11 @@ class TodosListCtrl {
         console.log("EDIT ? : ", task_id);
     }
 
+    /**
+     * Apply value from text field into text field Task model
+     * @param task_id
+     * @param taskNewTitle
+     */
     edit_apply(task_id, taskNewTitle) {
         Tasks
             .update({
@@ -92,8 +99,17 @@ class TodosListCtrl {
             }, {
                 $set: {text: taskNewTitle},
             });
-        
+
+
         this.task_to_change = ""; // reset input clicked (close input edit)
+    }
+
+
+    /**
+     * Using Meteor.methods object in api (remove all not allowed from client)
+     */
+    delete_all() {
+        Meteor.call('tasks.removeAll');
     }
 
 

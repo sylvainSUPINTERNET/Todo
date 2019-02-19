@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed5ab97f-1b19-4ba9-9838-c90d5b4e34c2" name="Default" comment="" />
+    <list default="true" id="ed5ab97f-1b19-4ba9-9838-c90d5b4e34c2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/tasks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/components/todosList/todosList.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/components/todosList/todosList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/components/todosList/todosList.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/components/todosList/todosList.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,8 +23,8 @@
       <file leaf-file-name="todosList.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/components/todosList/todosList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="38" column="79" lean-forward="true" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="79" />
+            <state relative-caret-position="332">
+              <caret line="39" column="61" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -29,11 +35,32 @@
       <file leaf-file-name="todosList.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/components/todosList/todosList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+            <state relative-caret-position="588">
+              <caret line="109" column="7" lean-forward="true" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/api/tasks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -43,7 +70,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>date</find>
+      <find>name</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -52,8 +83,8 @@
         <option value="$PROJECT_DIR$/imports/components/todoList/todoList.js" />
         <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/server/main.js" />
-        <option value="$PROJECT_DIR$/imports/api/tasks.js" />
         <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/imports/api/tasks.js" />
         <option value="$PROJECT_DIR$/imports/components/todosList/todosList.html" />
         <option value="$PROJECT_DIR$/imports/components/todosList/todosList.js" />
       </list>
@@ -75,6 +106,7 @@
     <option name="width" value="1920" />
     <option name="height" value="987" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -96,6 +128,12 @@
               <item name="simple-todos" type="b2602c69:ProjectViewProjectNode" />
               <item name="simple-todos" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-todos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-todos" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simple-todos" type="b2602c69:ProjectViewProjectNode" />
@@ -156,12 +194,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550564021578</updated>
-      <workItem from="1550564027619" duration="8123000" />
+      <workItem from="1550564027619" duration="10154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8123000" />
+    <option name="totallyTimeSpent" value="10154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="42" width="1920" height="987" extended-state="0" />
@@ -172,7 +210,7 @@
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
@@ -221,8 +259,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imports/api/tasks.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/main.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -234,17 +283,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/components/todosList/todosList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="38" column="79" lean-forward="true" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="79" />
+        <state relative-caret-position="332">
+          <caret line="39" column="61" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -253,8 +295,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/components/todosList/todosList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+        <state relative-caret-position="588">
+          <caret line="109" column="7" lean-forward="true" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

@@ -30,6 +30,13 @@
         </form>
     </div>
 
+    <div class="text-center">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-danger" ng-click="$ctrl.delete_all()"><i class="fa fa-trash"></i> Supp. all</button>
+        </div>
+    </div>
+
+
     <ul ng-show="$ctrl.tasks && $ctrl.tasks.length > 0" class="m-5">
         <div class="row">
             <div class="card col-md-3 m-3" style="width: 20rem;" ng-repeat="task in $ctrl.tasks">
@@ -44,8 +51,11 @@
                             class="fa fa-edit"></i></button></span></h5>
 
                     <div ng-show="task._id == $ctrl.task_to_change" class="form-group">
-                        <input type="text" placeholder="New title ..." ng-model="$ctrl.taskNewTitle" class="form-control">
-                        <button class="btn btn-sm btn-warning m-1" ng-click="$ctrl.edit_apply(task._id, $ctrl.taskNewTitle)">apply</button>
+                        <input type="text" placeholder="New title ..." ng-model="$ctrl.taskNewTitle"
+                               class="form-control">
+                        <button class="btn btn-sm btn-warning m-1"
+                                ng-click="$ctrl.edit_apply(task._id, $ctrl.taskNewTitle)">apply
+                        </button>
                     </div>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
