@@ -3,8 +3,10 @@
             class="fab fa-angular"></i> <i class="fa fa-equals"></i> Todo basic app </h1>
 </header>
 
-<div class="container">
-
+<div class="container" ng-show="$ctrl.currentUser">
+    <div>
+        <p><i class="fa fa-user"></i> {{$ctrl.currentUser.username}}</p>
+    </div>
     <div class="text-center">
         <form ng-submit="$ctrl.submit_task($ctrl.newTask)">
             <div class="form-group">
@@ -29,10 +31,11 @@
             </div>
         </form>
     </div>
-
     <div class="text-center">
         <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-danger" ng-click="$ctrl.delete_all()"><i class="fa fa-trash"></i> Supp. all</button>
+            <button type="button" class="btn btn-danger" ng-click="$ctrl.delete_all()"><i class="fa fa-trash"></i> Supp.
+                all
+            </button>
         </div>
     </div>
 
@@ -75,4 +78,9 @@
     </div>
 
 
+</div>
+
+
+<div ng-show="!$ctrl.currentUser">
+    <login-buttons></login-buttons>
 </div>
